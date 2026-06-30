@@ -1,0 +1,57 @@
+site_name: Embedded System Laboratory for Telecommunications 010113330
+site_description: ปฏิบัติการระบบฝังตัวสำหรับงานโทรคมนาคม — Embedded System Lab worksheets
+site_author: "010113330"
+site_url: https://pruks-dev.github.io/embedded-telecom/
+repo_url: https://github.com/pruks-dev/embedded-telecom
+edit_uri: ""
+
+theme:
+  name: material
+  language: th
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+  palette:
+    primary: deep purple
+    accent: deep purple
+
+plugins:
+  - search: {}
+  - encryptcontent:
+      password_inventory:
+        staff:
+          - !ENV [STAFF_PASSWORD, 'changethispassword']
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - tables
+  - footnotes
+  - attr_list
+  - md_in_html
+  - toc:
+      toc_depth: 3
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+
+nav:
+  - หน้าแรก: index.md
+  - ใบงานการทดลองที่ 1: ใบงานการทดลองที่ 1.md
+  - ใบงานการทดลองที่ 2: ใบงานการทดลองที่ 2.md
+  - ใบงานการทดลองที่ 3: ใบงานการทดลองที่ 3.md
+  - ใบงานการทดลองที่ 4: ใบงานการทดลองที่ 4.md
+  - ใบงานการทดลองที่ 5: ใบงานการทดลองที่ 5.md
+  - ใบงานการทดลองที่ 6: ใบงานการทดลองที่ 6.md
+  - ใบงานการทดลองที่ 7: ใบงานการทดลองที่ 7.md
+  - ใบงานการทดลองที่ 8: ใบงานการทดลองที่ 8.md
