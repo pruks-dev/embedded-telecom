@@ -33,6 +33,8 @@ pruk.s@eng.kmutnb.ac.th
 | 7 | Workflow Automation | n8n, LINE, Email, Incident Management |
 | 8 | AIoT Station | Full System Integration |
 
+👉 **ดูวิธีการติดตั้ง Arduino IDE และตั้งค่า ESP32 ได้ที่ [การติดตั้งซอฟต์แวร์](setup.md)**
+
 ## อุปกรณ์หลัก (Hardware)
 
 - ESP32 Development Board
