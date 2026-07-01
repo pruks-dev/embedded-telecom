@@ -31,6 +31,10 @@
   - Linux: `/dev/ttyUSB0` หรือ `/dev/ttyACM0`
 - ถ้าไม่เจอพอร์ต → ติดตั้ง Driver CP210x ( Silicon Labs CP210x USB to UART Bridge )
 
+![ESP32 Pinout](images/esp32-pin.png)
+
+> ศึกษา Pinout ของ ESP32 ให้เข้าใจก่อนเริ่มทดลอง — โดยเฉพาะพินที่ใช้บ่อย: **GPIO** (digital), **ADC** (analog), **SDA/SCL** (I2C), **3.3V / GND**
+
 ---
 
 ## 4. ติดตั้ง Library ที่จำเป็น
