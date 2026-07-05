@@ -19,12 +19,12 @@ jobs:
           python-version: '3.10'
       - run: pip install -r requirements.txt
       - run: mkdocs build --site-dir site
-      - uses: actions/configure-pages@v4
-        with:
-          static_site_generator: mkdocs
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
+      - uses: actions/configure-pages@v5
+         with:
+           static_site_generator: mkdocs
+      - uses: actions/upload-pages-artifact@v4
+         with:
+           path: site
 
   deploy:
     needs: build
@@ -33,4 +33,4 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/deploy-pages@v4
+      - uses: actions/deploy-pages@v5
