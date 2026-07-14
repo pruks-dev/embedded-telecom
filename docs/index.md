@@ -26,7 +26,7 @@ pruk.s@eng.kmutnb.ac.th
 | --- | --- | --- |
 | 1 | Sensor Node | ESP32, DHT11, LDR, WiFi Web Server |
 | 2 | Data Communication | WiFi, MQTT, HTTP, JSON |
-| 3 | Network Operation Center (NOC) | MQTT Subscribe, Dashboard, Site Status |
+| 3 | IoT Monitoring Dashboard | Node-RED, MQTT Subscribe, Dashboard |
 | 4 | Edge Gateway | Raspberry Pi, MQTT Broker, Protocol Translation |
 | 5 | Alarm System | PIR, Relay, Buzzer, OLED, Alarm Levels |
 | 6 | Edge AI | Edge AI, LLM, Fault Prediction |
@@ -55,5 +55,5 @@ pruk.s@eng.kmutnb.ac.th
 - **Python 3** — สำหรับพัฒนาโปรแกรมบน Raspberry Pi
 - **Mosquitto MQTT Broker** — สำหรับทดสอบการสื่อสาร MQTT
 - **n8n** — สำหรับ Workflow Automation (รันบน Raspberry Pi)
-- **Node-RED** — สำหรับสร้าง Dashboard (ทางเลือก)
+- **Node-RED** — สำหรับสร้าง Dashboard และ IoT Monitoring (Lab 3)
 - **ngrok** — สำหรับทดสอบ Webhook (ไม่จำเป็น)
