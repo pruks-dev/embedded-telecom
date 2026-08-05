@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-MkDocs documentation site for **010113330 Embedded System Laboratory for Telecommunications** (KMUTNB). 8 lab worksheets covering ESP32, MQTT, Raspberry Pi, Edge AI, and n8n workflow automation.
+MkDocs documentation site for **010113330 Embedded System Laboratory for Telecommunications** (KMUTNB). 8 lab worksheets covering ESP32, MQTT, Node-RED, Edge AI, and n8n workflow automation.
 
 - **Primary language:** Thai (technical terms in English)
 - **Deployed to:** GitHub Pages (`pruks-dev.github.io/embedded-telecom`)
@@ -77,14 +77,23 @@ requirements.txt               # Python dependencies
 |---|---|---|
 
 ---
+# หลักการ / แนวคิด
+(Concept explanation with Mermaid diagram)
+
+---
 # การทดลองที่ N.1 Title
 
-## ขั้นตอนการทดลอง
-1. Step...
+## สิ่งที่ต้องทำ
+
+| Node | หน้าที่ |
+|---|---|
+| `node-name` | คำอธิบายสั้น ๆ |
+
+### ผลลัพธ์ที่ต้องได้
+- Expected outcome bullets...
 
 ## บันทึกผลการทดลอง
-| Column | ... |
-|---|---|
+ถ่ายภาพ / วาง screenshot...
 
 ---
 # สรุปผลการทดลอง
@@ -96,8 +105,10 @@ requirements.txt               # Python dependencies
 
 - Use `---` as a horizontal rule separator between major sections.
 - Use `# Heading 1` for experiment titles, `## Heading 2` for subsections.
-- Every experiment ends with a **บันทึกผลการทดลอง** table for students to fill in.
-- Final questions go under **คำถามท้ายใบงาน** — no per-experiment sub-questions (avoid duplication).
+- **Do not write full code blocks** — list nodes/concepts and expected results, let students implement.
+- **Do not write step-by-step numbered instructions** — use node tables and outcome descriptions instead.
+- บันทึกผลการทดลอง uses screenshots, not pre-filled tables.
+- All questions go under **คำถามท้ายใบงาน** at the end only — no per-experiment sub-questions.
 
 ### Code blocks
 
@@ -196,6 +207,17 @@ rm encryptcontent.cache
 | ESP32 client ID | `site_<student_id>` | `site_66010001` |
 
 ---
+
+## Lab Content Philosophy
+
+Labs should tell students **what** to build and **what result** to achieve — not exactly **how** to build it. Students are expected to write their own code.
+
+- Do not include full code blocks in lab instructions.
+- Do not write step-by-step numbered instructions.
+- Instead, use **node tables** (ชื่อ node + หน้าที่) and **expected outcome** bullets.
+- Provide Mermaid architecture diagrams so students understand the big picture before implementing.
+- Include API specs or topic tables as reference, not as copy-paste templates.
+- Code snippets are acceptable only as brief illustrative fragments (2-3 lines) for non-obvious concepts.
 
 ## Embedded Code Conventions
 
