@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-MkDocs documentation site for **010113330 Embedded System Laboratory for Telecommunications** (KMUTNB). 8 lab worksheets covering ESP32, MQTT, Node-RED, Edge AI, and n8n workflow automation.
+MkDocs documentation site for **010113330 Embedded System Laboratory for Telecommunications** (KMUTNB). 8 lab worksheets covering ESP32, MQTT, Node-RED, Edge AI, n8n workflow automation, and ESP-NOW Mesh Network.
 
 - **Primary language:** Thai (technical terms in English)
 - **Deployed to:** GitHub Pages (`pruks-dev.github.io/embedded-telecom`)
@@ -212,12 +212,17 @@ rm encryptcontent.cache
 
 Labs should tell students **what** to build and **what result** to achieve — not exactly **how** to build it. Students are expected to write their own code.
 
-- Do not include full code blocks in lab instructions.
+- Do not include full code blocks in lab instructions (except foundational labs like 5.1/5.2 where students need working templates before extending).
 - Do not write step-by-step numbered instructions.
 - Instead, use **node tables** (ชื่อ node + หน้าที่) and **expected outcome** bullets.
 - Provide Mermaid architecture diagrams so students understand the big picture before implementing.
 - Include API specs or topic tables as reference, not as copy-paste templates.
 - Code snippets are acceptable only as brief illustrative fragments (2-3 lines) for non-obvious concepts.
+- **บันทึกผลการทดลอง** uses Serial Monitor screenshots, not pre-filled tables.
+- **Equipment tables** use 3 columns only: ลำดับ | อุปกรณ์ | จำนวน (no "ใช้ใน" column).
+- **Final questions** (คำถามท้ายใบงาน) — keep only 2-3 essential questions per lab.
+- **Progressive complexity**: early experiments use simulated/random data and simple Serial output; real sensors and displays appear only in later experiments.
+- **Capstone experiments** (e.g. 5.3) can omit code and provide only design specs — students must implement from scratch using earlier experiments as reference.
 
 ## Embedded Code Conventions
 
