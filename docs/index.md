@@ -18,7 +18,7 @@ pruk.s@eng.kmutnb.ac.th
 
 ตลอดทั้งภาคการศึกษา นักศึกษาจะพัฒนาระบบ **Telecommunication Base Station Remote Monitoring System**
 ซึ่งเป็นระบบตรวจสอบสถานีฐานโทรคมนาคมระยะไกลแบบสมบูรณ์ ครอบคลุมตั้งแต่
-การอ่านค่าเซ็นเซอร์ การสื่อสารข้อมูล การแสดงผลแบบ Real-time ไปจนถึงการประมวลผล Edge AI
+การอ่านค่าเซ็นเซอร์ การสื่อสารข้อมูล การแสดงผลแบบ Real-time ไปจนถึง Dynamic Mesh Network
 
 ## ใบงานการทดลอง
 
@@ -28,8 +28,8 @@ pruk.s@eng.kmutnb.ac.th
 | 2 | Data Communication | WiFi, MQTT, HTTP, JSON |
 | 3 | IoT Monitoring Dashboard | Node-RED, MQTT Subscribe, Dashboard |
 | 4 | Edge Gateway | Raspberry Pi, MQTT Broker, Protocol Translation |
-| 5 | Alarm System | PIR, Relay, Buzzer, OLED, Alarm Levels |
-| 6 | Edge AI | Edge AI, LLM, Fault Prediction |
+| 5 | Mesh Network (ESP-NOW) | ESP-NOW, P2P, Relay, Bidirectional Command |
+| 6 | Dynamic Mesh (ESP-NOW) | ESP-NOW, Dynamic Routing, Self-Healing, MQTT Bridge |
 | 7 | Workflow Automation | n8n, LINE, Email, Incident Management |
 | 8 | AIoT Station | Full System Integration |
 
