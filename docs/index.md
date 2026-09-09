@@ -30,7 +30,7 @@ pruk.s@eng.kmutnb.ac.th
 | 4 | Edge Gateway | Raspberry Pi, MQTT Broker, Protocol Translation |
 | 5 | Mesh Network (ESP-NOW) | ESP-NOW, P2P, Relay, Bidirectional Command |
 | 6 | Dynamic Mesh (ESP-NOW) | ESP-NOW, Dynamic Routing, Self-Healing, MQTT Bridge |
-| 7 | Workflow Automation | n8n, LINE, Email, Incident Management |
+| 7 | Edge Intelligence | Python, Anomaly Detection, n8n, Telegram/Discord, Email |
 | 8 | AIoT Station | Full System Integration |
 
 👉 **ดูวิธีการติดตั้ง Arduino IDE และตั้งค่า ESP32 ได้ที่ [การติดตั้งซอฟต์แวร์](setup.md)**

@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-MkDocs documentation site for **010113330 Embedded System Laboratory for Telecommunications** (KMUTNB). 8 lab worksheets covering ESP32, MQTT, Node-RED, Edge AI, n8n workflow automation, and ESP-NOW Mesh Network.
+MkDocs documentation site for **010113330 Embedded System Laboratory for Telecommunications** (KMUTNB). 8 lab worksheets covering ESP32, MQTT, Node-RED, n8n workflow automation, and ESP-NOW Mesh Network (static relay in Lab 5, dynamic routing in Lab 6).
 
 - **Primary language:** Thai (technical terms in English)
 - **Deployed to:** GitHub Pages (`pruks-dev.github.io/embedded-telecom`)
@@ -46,7 +46,12 @@ docs/                          # All source content
   setup.md                     # Software installation guide (Arduino IDE, ESP32)
   ใบงานการทดลองที่ 1.md        # Lab 1: Sensor Node
   ใบงานการทดลองที่ 2.md        # Lab 2: Data Communication (TCP/HTTP/MQTT)
-  ใบงานการทดลองที่ 3.md - 8.md # Labs 3-8
+  ใบงานการทดลองที่ 3.md        # Lab 3: IoT Monitoring Dashboard (Node-RED)
+  ใบงานการทดลองที่ 4.md        # Lab 4: Edge Gateway (Raspberry Pi, MQTT Broker)
+  ใบงานการทดลองที่ 5.md        # Lab 5: Mesh Network (ESP-NOW, static relay)
+  ใบงานการทดลองที่ 6.md        # Lab 6: Dynamic Mesh (ESP-NOW, dynamic routing, self-healing, MQTT bridge)
+  ใบงานการทดลองที่ 7.md        # Lab 7: Workflow Automation (n8n)
+  ใบงานการทดลองที่ 8.md        # Lab 8: AIoT Station (full integration)
   images/                      # Rendered diagrams and photos (PNG/JPG)
     lab-1/
     lab-2/ ...
@@ -213,6 +218,7 @@ rm encryptcontent.cache
 Labs should tell students **what** to build and **what result** to achieve — not exactly **how** to build it. Students are expected to write their own code.
 
 - Do not include full code blocks in lab instructions (except foundational labs like 5.1/5.2 where students need working templates before extending).
+- For non-foundational labs (e.g. Lab 6), provide a **"โค้ดต้นแบบ"** section that points to full source files in `docs/src/lab-N/` and shows only brief illustrative fragments (2-3 lines) for non-obvious concepts — students write their own code using the fragments as reference.
 - Do not write step-by-step numbered instructions.
 - Instead, use **node tables** (ชื่อ node + หน้าที่) and **expected outcome** bullets.
 - Provide Mermaid architecture diagrams so students understand the big picture before implementing.
