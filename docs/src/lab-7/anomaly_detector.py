@@ -6,7 +6,7 @@ Anomaly Detector — Lab 7.1
     python3 anomaly_detector.py
 
 ต้องติดตั้ง:
-    pip install paho-mqtt
+    pip install paho-mqtt   # v2.x
 """
 import json
 import statistics
@@ -100,7 +100,8 @@ def on_message(client, userdata, msg):
 
 
 def main():
-    client = mqtt.Client()
+    # paho-mqtt v2 ต้องระบุ Callback API Version เสมอ
+    client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
     client.on_message = on_message
     client.connect(MQTT_BROKER, MQTT_PORT, 60)
     client.subscribe(TOPIC_TELEMETRY)
